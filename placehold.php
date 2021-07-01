@@ -23,7 +23,7 @@ $bgColor = imagecolorallocate($im, $bgRGB['R'], $bgRGB['G'], $bgRGB['B']);
 $textColor = imagecolorallocate($im, $colorRGB['R'], $colorRGB['G'], $colorRGB['B']);
 
 // Set the background
-imagefilledrectangle($im, 0, 0, 299, 299, $bgColor);
+imagefilledrectangle($im, 0, 0, $width, $height, $bgColor);
 
 // First we create our bounding box for the first text
 $bbox = imagettfbbox($fontSize, 0, $font, $text);
